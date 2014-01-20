@@ -22,7 +22,7 @@ def func_deriv(x):
 # write constrains
 def cons_eq(x):
     tmp = x.dot(np.ones((len(x),1)))-1
-    return np.array([tmp])
+    return tmp
 
 def cons_eq_deriv(x):
     return np.ones((1,len(x)))
